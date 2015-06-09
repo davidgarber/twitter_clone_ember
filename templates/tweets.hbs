@@ -2,7 +2,7 @@
   <form>
     <div class="form-group">
       <label for="new-tweet">Tweet</label>
-      {{textarea value=new-tweet name="new-tweet" id="new-tweet" class="form-control" rows=2}}
+      {{textarea value=new-tweet name="new-tweet" id="new-tweet" class="form-control" rows=2 maxlength="140"}}
     </div>
 
     <button class="btn btn-primary" {{action 'tweet'}}>Tweet</button>
