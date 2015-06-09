@@ -2,7 +2,7 @@
   <form>
     <div class="form-group">
       <label for="new-tweet">Tweet</label>
-      {{textarea valueBinding="new-tweet" name="new-tweet" id="new-tweet" class="form-control" rows=2}}
+      {{textarea value=new-tweet name="new-tweet" id="new-tweet" class="form-control" rows=2}}
     </div>
 
     <button class="btn btn-primary" {{action 'tweet'}}>Tweet</button>
@@ -10,6 +10,6 @@
   </form>
 <ul>
   {{#each post in this}}
-    <li>{{post.tweet}}</li>
+    <li>{{#link-to 'tweet' post.id}}{{post.tweet}}{{/link-to}}</li>
   {{/each}}
 </ul>
