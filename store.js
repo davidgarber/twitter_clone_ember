@@ -10,6 +10,11 @@ var replies = [
     id: 2,
     tweets_id: 1,
     comment: "it is not that cool"
+  },
+  {
+    id: 3,
+    tweets_id: 2,
+    comment: "it kind of cool"
   }
 ];
 
