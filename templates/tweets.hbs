@@ -1,4 +1,13 @@
 <h1>Tweets:</h1>
+  <form>
+    <div class="form-group">
+      <label for="tweet">Tweet</label>
+      {{textarea id="tweet" class="form-control" rows=2 value=tweet}}
+    </div>
+
+    <button class="btn btn-primary" {{action 'tweet'}}>Tweet</button>
+
+  </form>
 <ul>
   {{#each post in this}}
     <li>{{post.tweet}}</li>
