@@ -1,9 +1,8 @@
 Twitter.TweetsController = Ember.ArrayController.extend({
   actions: {
     tweet: function() {
-      var newTweet = {id: "4", tweet: this.get('new-tweet')};
-      debugger
+      var newTweet = {id: (tweets.length + 1), tweet: this.get('new-tweet')};
       tweets.addObject(newTweet);
     }
   }
-})
+});
